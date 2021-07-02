@@ -34,7 +34,7 @@ let seattle = {
     for (let i = 0; i < hours.length; i++) {
       let liEl = document.createElement('li');
       // liEl.textContent = hours[i] + ' ' + this.avgCookiesPerH[i] + ' cookies';
-      liEl.textContent = `${hours[i]} ${this.avgCookiesPerH[i]} cookies`;
+      liEl.textContent = `${hours[i]}: ${this.avgCookiesPerH[i]} cookies`;
       ulEl.appendChild(liEl);
     }
     let totalEl = document.createElement('li');
@@ -82,7 +82,7 @@ let Tokyo = {
     for (let i = 0; i < hours.length; i++) {
       let liEl = document.createElement('li');
       // liEl.textContent = hours[i] + ' ' + this.avgCookiesPerH[i] + ' cookies';
-      liEl.textContent = `${hours[i]} ${this.avgCookiesPerH[i]} cookies`;
+      liEl.textContent = `${hours[i]}: ${this.avgCookiesPerH[i]} cookies`;
       ulEl.appendChild(liEl);
     }
     let totalEl = document.createElement('li');
@@ -130,7 +130,7 @@ let Dubai = {
     for (let i = 0; i < hours.length; i++) {
       let liEl = document.createElement('li');
       // liEl.textContent = hours[i] + ' ' + this.avgCookiesPerH[i] + ' cookies';
-      liEl.textContent = `${hours[i]} ${this.avgCookiesPerH[i]} cookies`;
+      liEl.textContent = `${hours[i]}: ${this.avgCookiesPerH[i]} cookies`;
       ulEl.appendChild(liEl);
     }
     let totalEl = document.createElement('li');
@@ -178,7 +178,7 @@ let Paris = {
     for (let i = 0; i < hours.length; i++) {
       let liEl = document.createElement('li');
       // liEl.textContent = hours[i] + ' ' + this.avgCookiesPerH[i] + ' cookies';
-      liEl.textContent = `${hours[i]} ${this.avgCookiesPerH[i]} cookies`;
+      liEl.textContent = `${hours[i]}: ${this.avgCookiesPerH[i]} cookies`;
       ulEl.appendChild(liEl);
     }
     let totalEl = document.createElement('li');
@@ -225,7 +225,7 @@ let Lima = {
     for (let i = 0; i < hours.length; i++) {
       let liEl = document.createElement('li');
       // liEl.textContent = hours[i] + ' ' + this.avgCookiesPerH[i] + ' cookies';
-      liEl.textContent = `${hours[i]} ${this.avgCookiesPerH[i]} cookies`;
+      liEl.textContent = `${hours[i]}: ${this.avgCookiesPerH[i]} cookies`;
       ulEl.appendChild(liEl);
     }
     let totalEl = document.createElement('li');
