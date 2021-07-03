@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header{
@@ -64,4 +64,13 @@ header{
 
   td, th {
       padding-right: 100px;
+      font-family: sans-serif !important;
   }
+
+th {
+  color:saddlebrown;
+}
+
+td {
+  color:darkred;
+}
