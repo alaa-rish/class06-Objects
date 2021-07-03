@@ -1,5 +1,5 @@
 'use strict';
-
+ 
 function createTable() {
   let divContainer = document.getElementById('container');
   let table = document.createElement('table');
@@ -41,6 +41,12 @@ function Shop(shopName, minCust, maxCust, avgCookies) {
   this.randCust = [];
   this.avgCookiesPerH = [];
   this.total = 0;
+
+  this.prepareAndAdd = function() {
+    calcRandCustPerH(this);
+    calAvgCookiesPerH(this);
+    render(this);
+  };
 }
 
 let seattle = new Shop('seattle', 23, 65, 6.4);
@@ -50,6 +56,27 @@ let Paris = new Shop('Paris', 20, 38, 2.4);
 let Lima = new Shop('Lima', 2, 16, 4.6);
 
 let shops = [seattle, Tokyo, Dubai, Paris, Lima];
+
+let addForm = document.getElementById('addForm');
+
+console.log('addForm = ' + addForm);
+addForm.addEventListener('submit',addShop);
+function addShop(event) {
+  event.preventDefault();
+  let shopNameInput = event.target.shopName.value;
+  let minCustInput = event.target.minCust.value;
+  let maxCustInput = event.target.maxCust.value;
+  let avgCookiesInput = event.target.avgCookies.value;
+
+  if(shopNameInput !== undefined && shopNameInput !== null && shopNameInput.length > 0 &&
+    minCustInput !== undefined && minCustInput !== null && minCustInput.length > 0 &&
+    maxCustInput !== undefined && maxCustInput !== null && maxCustInput.length > 0 &&
+    avgCookiesInput !== undefined && avgCookiesInput !== null && avgCookiesInput.length > 0) {
+    let newShop = new Shop(shopNameInput, minCustInput, maxCustInput, avgCookiesInput);
+    shops.push(newShop);
+    newShop.prepareAndAdd();
+  }
+}
 
 function calcRandCustPerH(shop) {
   for (let i = 0; i < hours.length; i++) {
