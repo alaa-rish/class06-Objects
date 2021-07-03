@@ -24,11 +24,10 @@
 * How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
   * 3 hours. 
 
-  ### Lab 09: Salmon Cookies
+### Lab 09: Salmon Cookies
 * How did this go, overall?
   * I learned how to use HTML form with JS.
 * What observations or questions do you have about what you’ve learned so far?
   * No quastions i have.
 * How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
   * 2 hours. 
-  
