@@ -25,7 +25,18 @@
       </nav>
   </header>
     <div id="container"></div>
-    <script src="../js/app.js"></script>
+
+    <form action="" id="addForm">
+      <fieldset>
+        <input type="text" id="shopName" name="shopName" placeholder="Shop Name" id="shopNameInput"/>
+        <input type="number" id="minCust" name="minCust" placeholder="Minimum Customers Number" id="minCustInput"/>
+        <input type="number" id="maxCust" name="maxCust" placeholder="Maximum Customers Number" id="maxCustInput"/>
+        <input type="number" id="avgCookies" name="avgCookies" placeholder="Average cookies sales" id="avgCookiesInput"/>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Add"/>
+      </fieldset>
+    </form>
 
     <footer style="background-color: gray;height: 200px;color: white;" id="contactus">
       <table style="color: white;transform: translateX(-50%);left: 50%;position: relative;top: 50px;">
@@ -51,5 +62,7 @@
         </tr>
       </table>
       </footer>
+
+      <script src="../js/app.js"></script>
   </body>
 </html>
