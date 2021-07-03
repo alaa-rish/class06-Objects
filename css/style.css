@@ -1,3 +1,67 @@
-table.shopsTable, th, td {
-    border: 1px solid;
+* {
+    font-family: sans-serif !important;
 }
+
+header{
+    background-color: #000000;
+    color:#ffffff;
+    height: 115px;
+  
+  }
+  
+  header div {
+    float: left;
+    padding: 20px;
+  }
+  
+  
+  header nav{
+    float: right;
+    color:#ffffff;
+    width: 30%;
+    margin-top: 25px;
+  
+  }
+  
+  header nav ul li {
+    display: inline-block;
+   text-decoration: none;
+   margin-left: 20px;
+  }
+
+  a {
+      color: white;
+  }
+  
+  #one{
+    width: max-width;
+    text-align: center
+  }
+  
+  #two{ 
+     text-align: center;
+     padding: 3%;
+  
+  background-color: rgb(228, 228, 228);
+  }
+  
+  
+  .imgContainer{
+    display: inline-block;
+    margin-left: 150px;
+    text-align: center;
+  }
+  
+  main div {
+  padding-top: 2%;
+  padding-left: 100px;
+  }
+  
+  body{
+    margin: 0%;
+    background-color: black;
+  }
+
+  td, th {
+      padding-right: 100px;
+  }

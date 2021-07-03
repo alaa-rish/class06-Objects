@@ -1,0 +1,10 @@
+table.shopsTable, th, td {
+    border: 1px solid !important;
+    padding: 0px !important;
+}
+
+footer {
+    position: fixed !important;
+    bottom: 0px;
+    width: 100%;
+}
